@@ -1,7 +1,8 @@
 ---
 import "@fontsource-variable/space-grotesk";
-import Header from "../components/Header.astro";
-import ThemeLine from "../components/ThemeLine.astro";
+import Header from "../sections/Header.astro";
+import ThemeLine from "../sections/ThemeLineSection.astro";
+import PrerequisitesSection from "../sections/PrerequisitesSection.astro";
 ---
 
 <html lang="en">
@@ -10,11 +11,12 @@ import ThemeLine from "../components/ThemeLine.astro";
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>Astro</title>
+    <title>Curso de desarrollo web Full Stack | Matias Lenci</title>
   </head>
   <body class="max-w-3xl mx-auto min-h-screen px-6 sm:px-8  text-white">
 	<Header/>
   <ThemeLine/>
+  <PrerequisitesSection/>
   </body>
 
   <style is:global>
