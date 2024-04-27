@@ -1,16 +1,28 @@
 ---
-
+import "@fontsource-variable/space-grotesk";
+import Header from "../components/Header.astro";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro</title>
+  </head>
+  <body class="max-w-3xl mx-auto min-h-screen px-6 sm:px-8  text-white">
+	<Header/>
+  </body>
+
+  <style is:global>
+    body {
+      background-color: rgb(19, 14, 39);
+      font-family: "Space Grotesk Variable", sans-serif;
+    }
+
+
+  </style>
+
+	
 </html>
