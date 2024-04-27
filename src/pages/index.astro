@@ -1,8 +1,9 @@
 ---
 import "@fontsource-variable/space-grotesk";
 import Header from "../sections/Header.astro";
-import ThemeLine from "../sections/ThemeLineSection.astro";
 import PrerequisitesSection from "../sections/PrerequisitesSection.astro";
+import ThemeLineSection from "../sections/ThemeLineSection.astro";
+import ModalitySection from "../sections/ModalitySection.astro";
 ---
 
 <html lang="en">
@@ -15,8 +16,9 @@ import PrerequisitesSection from "../sections/PrerequisitesSection.astro";
   </head>
   <body class="max-w-3xl mx-auto min-h-screen px-6 sm:px-8  text-white">
 	<Header/>
-  <ThemeLine/>
+  <ThemeLineSection/>
   <PrerequisitesSection/>
+  <ModalitySection/>
   </body>
 
   <style is:global>
