@@ -1,0 +1,49 @@
+---
+const TEMAS = [
+  {
+    title:'Fundamentos de la programación',
+    description:'Comenzarás explorando los conceptos básicos de la programación y las arquitecturas de aplicaciones más actuales. Además, te familiarizarás con herramientas indispensables como Git, Github y Visual Studio, que te ayudarán a gestionar tu código de forma eficiente.'
+  },
+  {
+    title:'Desarrollo Web',
+    description:'Crearas y diseñaras páginas web utilizando HTML5, dominando la estructura básica y la semántica del contenido web, mientras que en CSS, adquiriras habilidades para dar estilo y presentación a sus proyectos. Al finalizar, estaras capacitados para construir sitios web atractivos y funcionales, aplicando las mejores prácticas de accesibilidad y diseño responsivo.',
+  },
+  {
+    title:'Javascript',
+    description:'Aprenderas el lenguaje de programación más popular y demandado en el desarrollo de software. Con javascript aprenderas los conceptos de la programación con los que podras crear desde pequeños script hasta aplicaciones web complejas.Con HTML, entenderas la estructura de una página web; con CSS, daras estilo y diseño; y con JavaScript, añadiras funcionalidades avanzadas. Aprenderas a manipular el DOM, manejar eventos, y crear efectos y animaciones.',
+  },
+  {
+    title:'Frontend',
+    description:'Te sumergiras en la creación de interfaces de usuario atractivas y funcionales.  Dominaras frameworks y librerías populares de Javascript como React.js o Angular para crear experiencias de usuario dinámicas y eficientes. Al finalizar, estarán equipados para diseñar y desarrollar aplicaciones web modernas y responsivas.',
+  },
+  {
+    title:'Backend',
+    description:'Aprenderas a utilizar tecnologías como Node.js y Express para configurar servidores backend, manejar solicitudes y respuestas, y conectar sus aplicaciones con bases de datos relacionales con SQL. Explorarán conceptos como la autenticación de usuarios, la seguridad de datos y la optimización del rendimiento del servidor. Al finalizar, estarán preparados para desarrollar la lógica detrás de las aplicaciones web, brindando funcionalidades y servicios robustos desde el lado del servidor.',
+  },
+]
+---
+
+<ol class="relative border-s border-gray-700">
+{
+  TEMAS.map((tema,index)=>(
+
+    <li class="mb-10 ms-4">
+    <div
+      class="absolute w-3 h-3 rounded-full mt-1.5 -start-1.5 border border-gray-900 bg-gray-700"
+    >
+    </div>
+
+    <h3 class="text-lg font-semibold text-white">
+     {tema.title}
+    </h3>
+    <p class="text-base font-normal text-gray-400">
+     {tema.description}
+    </p>
+  </li>
+
+
+  ))
+}
+ 
+
+</ol>
